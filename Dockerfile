@@ -4,6 +4,7 @@
 FROM registry.redhat.io/ubi9/ubi AS ubi-micro-build
 
 RUN dnf install -y unzip
+ENV KC_HTTP_RELATIVE_PATH="/auth"
 
 # Add stuff downloaded by fetch-artifacts-pnc.yaml
 ADD artifacts/keycloak-operator-*.zip /tmp/keycloak/
