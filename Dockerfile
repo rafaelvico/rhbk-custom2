@@ -1,6 +1,6 @@
 FROM registry.redhat.io/rhbk/keycloak-rhel9:24-12 as builder
 
-COPY ./keycloak.conf /opt/keycloak/conf
+#COPY ./keycloak.conf /opt/keycloak/conf
 
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
