@@ -8,5 +8,5 @@ COPY ./providers/unimed-ciam-spi.jar /opt/keycloak/providers/
 RUN /opt/keycloak/bin/kc.sh build
 
 # Define o comando padrão para iniciar o servidor
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
-CMD ["start"]
+#ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+#CMD ["start"]
