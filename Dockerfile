@@ -5,6 +5,7 @@ FROM registry.redhat.io/rhbk/keycloak-rhel9:24-12 as builder
 # Enable health and metrics support
 ENV KC_HEALTH_ENABLED=true
 ENV KC_METRICS_ENABLED=true
+ENV KC_DB=postgres
 
 
 
